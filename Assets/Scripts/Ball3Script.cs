@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PendScript : MonoBehaviour
+public class Ball3Script : MonoBehaviour
 {
-    public List<GameObject> joints;
+
+    public CameraScript cScript;
+    public GameObject ball3;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -21,11 +24,9 @@ public class PendScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        for (int i = 0; i < joints.Count - 1; i++)
+        if (col.gameObject.tag == "BallMover")
         {
-            SpringJoint2D newSpring = joints[i].AddComponent<SpringJoint2D>();
-            newSpring.anchor = new Vector2(0, 0);
-            newSpring.connectedAnchor = joints[i + 1].transform.position;
+            cScript.target = ball3.transform;
         }
     }
 }
