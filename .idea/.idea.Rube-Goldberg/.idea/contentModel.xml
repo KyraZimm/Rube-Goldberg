@@ -11,7 +11,11 @@
           <e p="Ball2Script.cs" t="Include" />
           <e p="Ball3Script.cs" t="Include" />
           <e p="CameraScript.cs" t="Include" />
+          <e p="LeverScript.cs" t="Include" />
           <e p="PendScript.cs" t="Include" />
+          <e p="RetargetCameraScript.cs" t="Include" />
+          <e p="SpringScript.cs" t="Include" />
+          <e p="StickyScript.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
