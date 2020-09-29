@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class LeverScript : MonoBehaviour
+public class FlagScript : MonoBehaviour
 {
-    private bool physActive = false;
+    public Text finishText;
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,6 @@ public class LeverScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        finishText.text = "Fin!";
     }
 }

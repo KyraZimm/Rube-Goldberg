@@ -11,6 +11,7 @@
           <e p="Ball2Script.cs" t="Include" />
           <e p="Ball3Script.cs" t="Include" />
           <e p="CameraScript.cs" t="Include" />
+          <e p="FlagScript.cs" t="Include" />
           <e p="LeverScript.cs" t="Include" />
           <e p="PendScript.cs" t="Include" />
           <e p="RetargetCameraScript.cs" t="Include" />

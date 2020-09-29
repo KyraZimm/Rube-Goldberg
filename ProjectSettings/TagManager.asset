@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: flag decor
+    uniqueID: 1576972577
+    locked: 0
